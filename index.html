@@ -105,6 +105,14 @@ body{background:var(--bg);min-height:100vh}
 .idea-title{font-family:'Oswald',sans-serif;font-weight:600;font-size:15px;color:var(--txt);letter-spacing:0.02em;margin-bottom:6px;line-height:1.35}
 .idea-desc{font-size:13.5px;color:var(--txt2);line-height:1.7}
 .idea-desc em{font-family:'EB Garamond',Georgia,serif;font-style:italic;color:var(--txt)}
+.idea-scale{display:block;font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:6px}
+.why-block{margin-top:0.95rem;padding-top:0.9rem;border-top:1px solid var(--border)}
+.why-label{font-family:'Oswald',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:var(--o);margin-bottom:0.65rem}
+.why-list{display:flex;flex-direction:column;gap:0.55rem}
+.why-item{display:flex;gap:9px;align-items:flex-start;font-size:12.5px;color:var(--txt2);line-height:1.5}
+.why-item strong{color:var(--txt);font-weight:600}
+.why-icon{flex-shrink:0;width:16px;height:16px;margin-top:1px}
+.why-icon svg{width:16px;height:16px;display:block;stroke:var(--o);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
 .idea-tag{margin-top:10px;font-family:'Oswald',sans-serif;font-size:10px;letter-spacing:0.12em;color:var(--o);text-transform:uppercase;font-weight:600}
 .idea-tag a{color:inherit;text-decoration:none;border-bottom:1px dotted var(--o)}
 .idea-tag a:hover{border-bottom-style:solid}
@@ -238,6 +246,21 @@ body{background:var(--bg);min-height:100vh}
     </div>
   </nav>
 
+    <section class="vsl-intro">
+    <style>
+      .vsl-intro{margin:1.75rem 0 0}
+      .vsl-intro .vsl-eyebrow{font-family:'Oswald',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--o);margin-bottom:0.6rem;display:flex;align-items:center;gap:8px}
+      .vsl-intro .vsl-eyebrow::before{content:"\25B6";font-size:10px}
+      .vsl-intro .vsl-frame{position:relative;width:100%;padding-top:56.25%;border-radius:10px;overflow:hidden;border:1px solid var(--border);background:#000}
+      .vsl-intro .vsl-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+    </style>
+    <div class="vsl-eyebrow">Watch First · A Short Intro From Tom</div>
+    <div class="vsl-frame">
+      <iframe src="https://player.vimeo.com/video/1199563685?h=9a37ee9528&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Talex Mini VSL"></iframe>
+    </div>
+  </section>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+
     <header class="hero">
     <div class="brand-mark-row">
       <div class="brand-logo-wrap" style="width:auto;max-width:210px;padding:8px 12px">
@@ -308,12 +331,12 @@ body{background:var(--bg);min-height:100vh}
       <a class="wi-card" href="#sec-strategy">
         <div class="wi-num">03</div>
         <div class="wi-title">Lead With Value</div>
-        <div class="wi-desc">The Legendeering framework</div>
+        <div class="wi-desc">The Legendeering framework, in one page</div>
       </a>
       <a class="wi-card" href="#sec-worlds">
         <div class="wi-num">04</div>
         <div class="wi-title">Three Concepts For OBT</div>
-        <div class="wi-desc">Three returning series built around the people you serve</div>
+        <div class="wi-desc">A flagship series, a taco drama, and footage you already have</div>
       </a>
       <a class="wi-card" href="#sec-films">
         <div class="wi-num">05</div>
@@ -545,7 +568,7 @@ body{background:var(--bg);min-height:100vh}
       <span class="sec-pill-orange">03</span>
       <span class="section-eyebrow">Lead With Value</span>
     </div>
-    <h2 class="section-title">The Legendeering Framework</h2>
+    <h2 class="section-title">The Legendeering Framework, In One Page</h2>
     <p class="section-subtitle">The methodology behind every Talex production. Five directives, one core principle.</p>
   </div>
 
@@ -576,8 +599,8 @@ body{background:var(--bg);min-height:100vh}
       <span class="sec-pill-orange">04</span>
       <span class="section-eyebrow">Three Concepts For OBT</span>
     </div>
-    <h2 class="section-title">Three Returning Series Built Around The People You Serve</h2>
-    <p class="section-subtitle">Each one builds on what OBT has already earned. Each one puts a real person at the center, with OBT as the guide.</p>
+    <h2 class="section-title">Three Ways To Put OBT On Screen</h2>
+    <p class="section-subtitle">One flagship series, one short taco drama, and one fast way to use the footage you already have. We film and produce at every level, so where you start is up to you.</p>
   </div>
 
   <div class="ideas-grid">
@@ -585,24 +608,51 @@ body{background:var(--bg);min-height:100vh}
     <div class="idea-card idea-card-featured">
       <div class="idea-num">01</div>
       <div class="idea-body">
+        <div class="idea-scale">Long-Form Episodic · Flagship, ongoing</div>
         <div class="idea-title">"The First Year"</div>
-        <div class="idea-desc">A returning documentary series that follows one OBT participant per season, told across episodes that move from the day they walk in, through the training, and out the other side into a job or a credential. The participant is the lead, their instructor or career coach is the guide, and you appear as the steady voice who frames why the work matters. The audience is anyone wondering whether a program like this could change their own life, plus the funders and employers who would rather see the work than read a report about it. The 2018 alumni films already proved the people make great subjects, and this follows it as it happens.</div>
+        <div class="idea-desc">It is Monday morning at OBT's hub in Sunset Park, and a young woman is sitting at an intake desk with a clipboard. She left high school years ago, every job since has paid by the hour, and she has decided this is the year that changes.<br/><br/><em>The First Year</em> is a documentary series that follows one OBT participant per season, from that intake conversation through training to the credential and the first paycheck of a real career. Her instructor and her career coach are the guides who walk her through it, and Greg opens each season with the bigger picture: more than 1,500 people a year come through OBT's programs, in an organization Sister Mary Franciscus started in a Sunset Park storefront in 1983.<br/><br/>You meet her the week she enrolls. You watch the first practice exam come back short, the week she almost stops showing up, and the coach who calls her that night. And you are there the day the result posts and the offer comes.<br/><br/><em>Last Chance U (the Netflix series that follows junior college football players through one season, chasing one more shot at the game)</em> made millions of people root for young men other programs had passed over, because it stayed with them long enough to care. <em>The First Year</em> runs on the same engine, and OBT already has the endings to prove it: Shanae finished the masonry program in 2019 and is now a fourth-year apprentice with Local 28, and Stephanie passed her pharmacy technician exam on the first try. The series films the next story like those as it happens, and the audience gets to watch a life change in real time.</div>
+        <div class="why-block">
+          <div class="why-label">Why long-form episodic wins over time</div>
+          <div class="why-list">
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><span><strong>One-off videos are not appointment content.</strong> A season that follows one participant gives students, funders, and employers a reason to come back episode after episode.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><strong>Start with story, follow with facts.</strong> Viewers meet one person first, so the 1,500-a-year number lands after they have watched one of those lives change.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><span>Trust is built in <strong>small moments repeated over time</strong>, and a returning season, released steadily, does what a single recruitment video watched once cannot.</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="idea-card">
       <div class="idea-num">02</div>
       <div class="idea-body">
-        <div class="idea-title">"The Return"</div>
-        <div class="idea-desc">A returning series where an OBT graduate who made it comes back to help a current participant through the same program they once took. A Local 28 mason mentors someone in the masonry program, a working pharmacy tech sits with a student about to take the exam, a graduate now in tech guides someone just starting the cloud support course. Each episode is a different track and a different pair, and the story is the graduate showing the student exactly how they made it through. It shows the community that this works, because someone who finished is sitting right there helping the next person.</div>
+        <div class="idea-scale">Short-Form Episodic · The Taco Drama</div>
+        <div class="idea-title">"Placed"</div>
+        <div class="idea-desc">It is 4:15 on a Thursday afternoon at a workforce hub in Sunset Park. An employer has just called needing four OSHA-certified workers on a site by Monday morning, the copier is jammed on page two of a sixty-page grant report, and somebody has already told the employer it is handled.<br/><br/>A <em>'Taco Drama'</em> is a short scripted series designed to be easy to consume on the go. <em>Placed</em> is a workplace comedy set in the back office of a Brooklyn job-training nonprofit, where the employer partnerships desk, the career coaches, and the compliance files all share one floor, so every placement crosses three desks and every deadline belongs to somebody else. Episodes run a minute or two, shot vertical for phones and widescreen for YouTube and the website.<br/><br/>The cast is a fixed four. Denise runs the employer partnerships desk, keeps every contractor and pharmacy manager in her phone, and has never left a job order unfilled. Marcus handles compliance, can recite three different funders' reporting rules from memory, and will do it whether you asked or not. Rosa coaches across four programs at once, masonry, pharmacy tech, cloud support, and high school equivalency, and nobody touches the exam-date calendar on her wall. And Omar is the new outreach coordinator who tells every employer "we have the perfect person" before he has checked with a single coach.<br/><br/>Every episode a new job order lands with a clock on it, the four of them get it filled, and by Monday the whiteboard is clean and the phone rings again. <em>Abbott Elementary (the sitcom where a public school's staff gets through one small crisis a week and the school resets by Monday)</em> made an audience love an underfunded workplace by making them love the people in it. And <em>Parks and Recreation (the comedy about a small government office buried in paperwork and staffed by people who care anyway)</em> proved the grind of public service can carry a show for years. The audience gets a quick laugh from the side of a nonprofit nobody ever sees, and a cast worth coming back to every week.</div>
+        <div class="why-block">
+          <div class="why-label">Why short-form drama is worth the bet</div>
+          <div class="why-list">
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span><span>Micro-drama is already an <strong>$11 billion market in 2025</strong>, headed to about $14 billion by the end of this year (Omdia).</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span>P&amp;G, whose ad budget runs around <strong>$9.2 billion</strong>, has multiple micro-dramas in production right now.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span><span><strong>The world resets every episode.</strong> There is always another job order with a clock on it, so the show never runs out of stories.</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="idea-card">
       <div class="idea-num">03</div>
       <div class="idea-body">
-        <div class="idea-title">"How To Get In"</div>
-        <div class="idea-desc">A returning how-to series for the people OBT exists to help, where each episode answers one real question they ask: how to earn a high school equivalency as an adult, how to break into healthcare without a four-year degree, how the apprenticeship path into the building trades really works, and how a new New Yorker goes from an ESOL class to a first paycheck. An OBT expert explains it plainly while a participant living it carries the story, so it teaches and stays watchable at the same time. It is the same knowledge your staff give every day, made into something the wider community can actually use.</div>
+        <div class="idea-scale">From Footage You Already Have · fast</div>
+        <div class="idea-title">"The Recut"</div>
+        <div class="idea-desc">Fatima, an OBT graduate, sits in front of a camera and talks about where the program took her. You already filmed that. It has been sitting on your YouTube channel since 2018, one of eight alumni interviews, Fatima, Esteban, Christi, Teniene, Jesus, Melanie, Teisha, and Ronaldo, next to the Meet our Graduate films from 2020 and 2021, inside a library of 60 videos going back to 2008.<br/><br/>This one needs no new shoot. We take the interviews you already own and recut them into short vertical clips for the feeds people actually scroll, and into ad creative you can put spend behind. One sit-down interview becomes three or four short clips, and the eight alumni interviews together become weeks of posts, each one a graduate saying in their own words where the training took them.<br/><br/>Someone scrolling who has never heard of OBT watches thirty seconds of a graduate talking about the career she has now, and comes away knowing exactly what you do.</div>
+        <div class="why-block">
+          <div class="why-label">Why this is the fastest place to start</div>
+          <div class="why-list">
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span><span><strong>The footage already exists.</strong> Eight alumni interviews and the graduate films are already shot, so the recut puts their strongest moments in the vertical shape people watch on their phones.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg></span><span>Trust is built in <strong>small moments repeated over time</strong>, and a steady run of thirty-second graduate clips reaches people again and again, where one long video plays once.</span></div>
+            <div class="why-item"><span class="why-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span><strong>Start with story, follow with facts.</strong> A graduate's own words carry the mission before any statistic has to.</span></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -756,10 +806,6 @@ body{background:var(--bg);min-height:100vh}
   <div class="faq-item">
     <div class="faq-q">How is your approach different from a typical video agency?</div>
     <div class="faq-a">We start with the community, not the camera. Before any production decision, we map who you're speaking to, what they need from you, and what shift we're trying to produce in them. Format and craft follow from there.</div>
-  </div>
-  <div class="faq-item">
-    <div class="faq-q">Do you only work with certain industries?</div>
-    <div class="faq-a">At Talex, we don’t limit our focus to one vertical or industry, because industry-specific thinking leads to uniform outputs and our goal is to help our clients stand out from their competition.<br><br>Ultimately, a cross-disciplinary perspective forces innovation and creates more original ideas. Because we are not tied to the conventions of one industry, we can do a better job of helping you create content authentic to your brand and valuable to your audience. So you stand out and remain top of mind for your customers.</div>
   </div>
   <div class="faq-item">
     <div class="faq-q">We already have a marketing team. Why should we work with Talex?</div>
